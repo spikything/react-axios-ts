@@ -1,11 +1,16 @@
+import './App.css';
 import { ReactElement } from 'react';
-import List from './components/class/List'; // Class-based (legacy) component
+import ListClass from './components/class/List'; // Class-based (legacy) component
+import ListFunctional from './components/hooks/List'; // Function (hooks) component
 
 function App():ReactElement {
 
+  const endpoint = 'https://jsonplaceholder.typicode.com/users';
+
   return (
     <>
-      <List endpoint='https://jsonplaceholder.typicode.com/users' />
+      <ListClass endpoint={endpoint} />
+      <ListFunctional endpoint={endpoint} />
     </>
   );
 

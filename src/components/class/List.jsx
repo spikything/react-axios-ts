@@ -9,8 +9,8 @@ export default class List extends React.Component {
   
   componentDidMount() {
     axios.get(this.props.endpoint)
-      .then(res => {
-        const people = res.data;
+      .then(result => {
+        const people = result.data;
         this.setState({ people });
       })
   }
@@ -18,6 +18,7 @@ export default class List extends React.Component {
   render() {
     return (
       <ul>
+        <strong>Class component</strong>
         {
           this.state.people
             .map(person =>
