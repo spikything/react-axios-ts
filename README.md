@@ -1,6 +1,6 @@
 # react-axios-ts
 
-A demonstration of using Axios with 3 flavours of React:
+A simple demonstration of using Axios for loading data with 3 flavours of React component:
 
 - Class Components (legacy version)
 - Functional Components (Hooks)
@@ -8,16 +8,10 @@ A demonstration of using Axios with 3 flavours of React:
 
 ### Setup
 
-Fork/clone the repo, then
+Fork/clone the repo, then install its dependencies with:
 
 ```
 npm i
-```
-
-### Install Axios
-
-```
-npm i axios
 ```
 
 ### Running
